@@ -19,10 +19,15 @@ window.addEventListener('load', () => {
 
 
 function init() {
+    if(doc.badinputDiv){
     doc.badinputDiv.style.display = 'none';
+    }
+    if(doc.calcButton){
     doc.calcButton.addEventListener('click', () => {
         startCalc();
+    
     });
+}
 }
 
 function startCalc() {
